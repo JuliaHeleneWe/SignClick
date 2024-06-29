@@ -7,7 +7,11 @@ body {
 }
 .header {
     font-size: 3rem;
-    line-height: 4rem;
-    letter-spacing: 0.3em;
+    line-height: 3rem;
     font-weight: bold;
+}
+.active-sign-video {
+    color: white !important;
+    background-color: rgb(74 222 128) !important;
+    border-color: rgb(74 222 128) !important;
 }
