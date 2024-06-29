@@ -11,3 +11,8 @@ body {
     letter-spacing: 0.3em;
     font-weight: bold;
 }
+.active-sign-video {
+    color: white;
+    background-color: rgb(74 222 128);
+    border-color: rgb(74 222 128);
+}
