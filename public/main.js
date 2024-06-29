@@ -6,10 +6,13 @@ const SignData = class {
 };
 
 const signMapping = {
-    'help': new SignData('Hallo, kann ich Ihnen helfen?', 'public/video/hallo-kann-ich-ihnen-helfen.mp4'),
-    'exam': new SignData('Ich werde Sie jetzt untersuchen.', 'public/video2.mp4'),
-    'hurt': new SignData('Haben Sie Schmerzen?', 'public/video1.mp4'),
-    'ambulance': new SignData('Ich werde einen Krankenwagen rufen.', 'public/video/ich-werde-einen-krankenwagen-rufen.mp4'),
+    'help': new SignData('Hallo, kann ich Ihnen helfen?', 'public/video/1.Satz.mp4'),
+    'exam': new SignData('Ich werde Sie jetzt untersuchen.', 'public/video/6.Satz.mp4'),
+    'hurt': new SignData('Haben Sie Schmerzen?', 'public/video/3.Satz.mp4'),
+    'stay': new SignData('Ich bleibe hier.', 'public/video/4.Satz.mp4'),
+    'save': new SignData('Der Rettungssanitäter ist auf halbem Weg.', 'public/video/5.Satz.mp4'),
+    'ambulance': new SignData('Ich werde einen Krankenwagen rufen.', 'public/video/2.Satz.mp4'),
+    'alone': new SignData('Du bist nicht allein.', 'public/video/7.Satz.mp4'),
 };
 
 const signContainer = document.getElementById("sign-videos");
@@ -17,7 +20,7 @@ const player = document.getElementById('player');
 
 player.addEventListener('ended', () => {
     let activeElement = document.getElementsByClassName('active-sign-video');
-    activeElement.classList.remove('active-sign-video');
+    activeElement[0].classList.remove('active-sign-video');
 });
 
 const playVideo = (id, link) => {
