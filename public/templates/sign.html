@@ -1,0 +1,12 @@
+<script id="sign" type="text/x-handlebars-template">
+    {{#each headers}}
+    <div class="centered">
+        <form id="ideas-form" method="post" onsubmit="playVideo();return false;">
+            <input type="submit" value="{{this.text}}" class="text-violet-200 bg-violet-700 border-solid border-2 border-violet-700 rounded p-2" />
+        </form>
+        <div id="player">
+            <video id="player" width="320" height="240" src="{{this.link}}" controls></video>
+        </div>
+    </div>
+    {{/each}}
+</script>

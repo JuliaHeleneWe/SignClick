@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100%;
+}
+.header {
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
