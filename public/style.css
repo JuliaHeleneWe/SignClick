@@ -6,8 +6,7 @@ body {
     height:100%;
 }
 .header {
-    font-size: 3rem;
-    line-height: 3rem;
+    line-height: 100%;
     font-weight: bold;
 }
 .active-sign-video {
@@ -17,4 +16,13 @@ body {
 }
 .w-full {
     width: 100%;
+}
+
+#player{
+    width: 100vw;
+    height: 60svh;
+}
+
+img{
+    max-height: 40px;
 }

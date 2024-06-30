@@ -5,12 +5,12 @@
     "background_color": "#ddd6fe",
     "display": "standalone",
     "scope": "/",
-    "start_url": "https://juliahelenewe.github.io/SignClick/",
+    "start_url": "http://signclick.mina-zarkesh.de",
     "description": "Translate text prompts to sign language by displaying videos",
     "orientation": "any",
     "icons": [
         {
-            "src": "https://juliahelenewe.github.io/SignClick/public/img/logo.jpg",
+            "src": "http://signclick.mina-zarkesh.de/public/img/logo.jpg",
             "sizes": "1024x1024"
         }
     ]
