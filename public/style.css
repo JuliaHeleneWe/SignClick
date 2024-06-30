@@ -26,3 +26,6 @@ body {
 img{
     max-height: 40px;
 }
+.header-class {
+    align-items: center;
+}
