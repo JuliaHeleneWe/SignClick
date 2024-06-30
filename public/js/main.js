@@ -10,7 +10,7 @@ const signMapping = {
     'exam': new SignData('Ich werde Sie jetzt <b>untersuchen</b>.', 'public/video/6.Satz.mp4'),
     'hurt': new SignData('Haben Sie <b>Schmerzen</b>?', 'public/video/3.Satz.mp4'),
     'ambulance': new SignData('Ich werde einen <b>Krankenwagen</b> rufen.', 'public/video/2.Satz.mp4'),
-    'save': new SignData('Der Rettungssanitäter ist auf halbem Weg.', 'public/video/5.Satz.mp4'),
+    'save': new SignData('Der <b>Rettungssanitäter</b> ist gleich da.', 'public/video/5.Satz.mp4'),
     'stay': new SignData('Ich <b>bleibe</b> hier.', 'public/video/4.Satz.mp4'),
     'alone': new SignData('Du bist <b>nicht allein</b>.', 'public/video/7.Satz.mp4'),
 };
