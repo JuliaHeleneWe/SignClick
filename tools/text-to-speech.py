@@ -27,7 +27,7 @@ for myfile, mytext in mytexts.items():
     # here we have marked slow=False. Which tells 
     # the module that the converted audio should 
     # have a high speed
-    myobj = gTTS(text=mytext, lang=language, slow=False)
+    myobj = gTTS(text=mytext, lang=language, slow=True)
 
     # Saving the converted audio in a mp3 file named
     # welcome 
