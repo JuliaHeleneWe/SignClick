@@ -1,19 +1,27 @@
 <html>
     <head>
         <title>SignClick</title> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="public/style.css">
+        <link rel="manifest" href="manifest.json">
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
-    <body class="bg-violet-200 py-8">
-        <div class="flex-row">
-            <h1 class="header"><img src="public/img/logo.jpg" width="20" height="20">SignClick</h1>
+    <body class="bg-violet-200 pb-4">
+        <header class="flex-row flex justify-center p-4 h-1/6">
+            <img class="inline" src="public/img/logo_ohne_text.png">
+            <h1 class="header flex-row flex ">SignClick</h1>
+        </header>
+        <div id="player-container">
+            <video id="player" src="public/video/1.Satz.mp4"></video>
         </div>
-        <div id="player w-100 md:w-50 flex-col">
-            <video id="player" width="320" height="240" src="public/video1.mp4"></video>
-        </div>
-        <div id="sign-videos" class="overflow-y-scroll mt-4"></div>
-        <script src="public/main.js" type="text/javascript"></script>
+        <div id="sign-videos" class="overflow-y-scroll mt-2 px-4"></div>
+        <script src="public/js/main.js" type="text/javascript"></script>
+        <script>
+            if (!navigator.serviceWorker.controller) {
+                navigator.serviceWorker.register("/public/js/sw.js").then(function(reg) {
+                    console.log("Service worker has been registered for scope: " + reg.scope);
+                });
+            }
+        </script>
     </body>
 </html>

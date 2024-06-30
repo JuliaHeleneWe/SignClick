@@ -6,8 +6,23 @@ body {
     height:100%;
 }
 .header {
-    font-size: 3rem;
-    line-height: 4rem;
-    letter-spacing: 0.3em;
+    line-height: 100%;
     font-weight: bold;
+}
+.active-sign-video {
+    color: white !important;
+    background-color: rgb(74 222 128) !important;
+    border-color: rgb(74 222 128) !important;
+}
+.w-full {
+    width: 100%;
+}
+
+#player{
+    width: 100vw;
+    height: 60svh;
+}
+
+img{
+    max-height: 40px;
 }

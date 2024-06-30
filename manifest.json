@@ -1,0 +1,17 @@
+{
+    "name": "SignClick",
+    "short_name": "SignClick",
+    "theme_color": "#6d28d9",
+    "background_color": "#ddd6fe",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "http://signclick.mina-zarkesh.de",
+    "description": "Translate text prompts to sign language by displaying videos",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "http://signclick.mina-zarkesh.de/public/img/logo.jpg",
+            "sizes": "1024x1024"
+        }
+    ]
+}
