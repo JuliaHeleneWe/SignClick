@@ -5,6 +5,7 @@ const SignData = class {
     }
 };
 
+
 const signMapping = {
     'help': new SignData('Hallo, ich werde Ihnen helfen.', 'public/video1.mp4'),
     'exam': new SignData('Ich werde Sie jetzt untersuchen.', 'public/video2.mp4'),
