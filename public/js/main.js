@@ -20,7 +20,10 @@ const player = document.getElementById('player');
 
 const removeActivePlayer = () => {
     let activeElement = document.getElementsByClassName('active-sign-video');
-    activeElement[0].classList.remove('active-sign-video');
+    if(activeElement.length > 0) {
+        activeElement[0].classList.remove('active-sign-video');
+    }
+    
 };
 
 player.addEventListener('ended', () => {
@@ -30,7 +33,7 @@ player.addEventListener('ended', () => {
 const playVideo = (id, link) => {
     player.src = link;
     player.play();
-    //removeActivePlayer();
+    removeActivePlayer();
     document.getElementById(id).classList.add('active-sign-video'); 
 };
 
@@ -44,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>`));
         mappingHtml += (`<div id="sign-video-${index}">
             <form id="sign-form-${index}" method="post" onsubmit="playVideo('sign-button-${index}','${sign.link}');return false;" class="mt-2 sign-video-btn">
+                <!--<button id="sign-button-${index}" class="text-violet-200 bg-violet-700 border-solid border-2 border-violet-700 rounded p-2" >${sign.text}</button>-->
                 <input contenteditable type="submit" id="sign-button-${index}" value="${sign.text}" class="text-violet-200 bg-violet-700 border-solid border-2 border-violet-700 rounded p-2" />
             </form>
         </div>`);
