@@ -20,10 +20,7 @@ const player = document.getElementById('player');
 
 const removeActivePlayer = () => {
     let activeElement = document.getElementsByClassName('active-sign-video');
-    if(activeElement.length > 0) {
-        activeElement[0].classList.remove('active-sign-video');
-    }
-    
+    activeElement[0].classList.remove('active-sign-video');
 };
 
 player.addEventListener('ended', () => {
@@ -33,7 +30,7 @@ player.addEventListener('ended', () => {
 const playVideo = (id, link) => {
     player.src = link;
     player.play();
-    removeActivePlayer();
+    //removeActivePlayer();
     document.getElementById(id).classList.add('active-sign-video'); 
 };
 
